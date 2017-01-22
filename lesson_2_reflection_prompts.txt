@@ -24,13 +24,50 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+    I can use the staging area to perform any experimental changes, before
+	committing it to the repository, This enables me to perform massive code based 
+	revisions without having the fear of destroying something, also if I do not
+	want those changes, I can revert back to the original version by typing
+	the command git reset --hard.
+
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+    Branches are especially useful in cases where I want I particular vesrion
+	of a work but I do not want to perform any more updates on it i.e. I do not
+    want to keep adding changes in a sequence, or I might want to create a file in a 
+    different language. Using a branch in these case will be very useful.
+	
+    
 How do the diagrams help you visualize the branch structure?
+
+    The diagrams helps me in understanding the entire structure of commits and 
+	branches as it shows me the history of commits made to a project. It helps
+	me in understanding which branches of a commit are experimental and which
+	of the branches lead to the actual production code. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+    On merging two branches together, we obtain a code that contains the features of
+	both the branches, this allows me to combine a new feature which tried it as an 
+	experiment on a separate branch to the code which has to be deliverd for production.
+	
+	This is represented in a branch  diagram in a form of a graph so as to determine the 
+	the parents of the current tip of the branch, Apart from that we are also able to find
+	out the previous commits that were made in a particular branch and also find out the
+	commits which are unreachable from the current tip of a branch.
+	
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+     
+	 Pros: Automatically merging enables a user to integrate two features without 
+	 writing any additional line of code in the git bash. Also we do not have to look 
+	 at the full code to place the changes.
+	 
+	 Cons: Automatically merging has a flaw that it can changee the features which were 
+	 supposed to be present and introduce extra unwanted lines of code. Now, this can be trouble
+	 in a project having a lot of collaborators, as each collaborator may have a different
+	 perspective and thus, have a different code to the same feature. Introducing all these
+	 changes onto the master branch may bring ambiguity.
