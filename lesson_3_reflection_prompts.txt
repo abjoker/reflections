@@ -35,7 +35,9 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    If I have a copy of the last known state of the remote stored locally
+	then I will be able to find out all the previous changes uptil the most
+	recent changes was made using the fast forward merge.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
